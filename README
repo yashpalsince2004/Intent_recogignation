@@ -1,0 +1,135 @@
+
+# 🔍 Day 13 - Intent Recognition (Hinglish) | AI Learning Journey
+
+This project notebook focuses on **Intent Recognition** in **Hinglish (Hindi-English mixed language)** text. It forms part of a larger AI/ML learning journey—specifically Day 13—where we explore natural language processing techniques to classify the user’s intent in conversational inputs.
+
+---
+
+## 📁 Project Structure
+
+```
+Day13_Intent_Recognition_Hinglish.ipynb
+data/
+└── hinglish_dataset.csv  (assumed location of dataset)
+models/
+└── intent_model.h5       (optional: saved trained model)
+README.md
+```
+
+---
+
+## 🎯 Objective
+
+The main goal of this notebook is to:
+
+- Understand and build a pipeline for **intent classification**.
+- Handle **Hinglish** data (a mix of Hindi and English words).
+- Train a deep learning model using **TensorFlow/Keras** to classify intents.
+- Apply **tokenization**, **padding**, and **label encoding** techniques.
+- Deploy and evaluate the model.
+
+---
+
+## 📚 Topics Covered
+
+- Text preprocessing (stopword removal, cleaning)
+- Tokenization & Sequencing using TensorFlow
+- One-hot encoding of intents
+- Model architecture design using Keras
+- Training, validation & accuracy analysis
+- Saving and using the trained model
+
+---
+
+## 🧠 Technologies Used
+
+| Area              | Libraries/Tools                  |
+|-------------------|----------------------------------|
+| Language          | Python 3.x                        |
+| Data Handling     | Pandas, NumPy                    |
+| NLP               | TensorFlow / Keras               |
+| Visualization     | Matplotlib                       |
+| Notebook Format   | Jupyter Notebook (.ipynb)        |
+
+---
+
+## 📝 Dataset
+
+The dataset used contains Hinglish utterances and corresponding intents, structured like:
+
+```csv
+text,intent
+"main youtube kholna chahta hoon",open_youtube
+"camera open karo",open_camera
+"time kya hua hai",get_time
+...
+```
+
+> 📌 **Note:** The dataset is either loaded from a local `CSV` file or embedded within the notebook itself.
+
+---
+
+## 🏗️ Model Architecture
+
+- **Embedding Layer**
+- **GlobalAveragePooling1D**
+- **Dense Layers with ReLU activation**
+- **Final Softmax Layer** for intent classification
+
+---
+
+## ⚙️ How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/intent-recognition-hinglish.git
+   cd intent-recognition-hinglish
+   ```
+
+2. Install required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Run the Jupyter Notebook:
+   ```bash
+   jupyter notebook Day13_Intent_Recognition_Hinglish.ipynb
+   ```
+
+4. Execute the cells step-by-step to train and test the model.
+
+---
+
+## 📊 Results
+
+- Achieved ~XX% training accuracy (update based on output)
+- Real-time intent predictions possible on user input
+
+---
+
+## 🔮 Future Improvements
+
+- Add a speech-to-text module for real-time voice-based interaction.
+- Expand intent classes and dataset variety.
+- Integrate with Android using TFLite for a mobile-based chatbot.
+
+---
+
+## 🤝 Contributors
+
+- [Your Name](https://github.com/your-username) — AI/ML Engineering Student, Project Lead
+- [Your Team Members' Names]
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**. Feel free to use, modify, and distribute with attribution.
+
+---
+
+## 🙏 Acknowledgements
+
+- TensorFlow & Keras Documentation
+- Hinglish NLP community examples
+- Inspiration from voice assistant datasets and research
